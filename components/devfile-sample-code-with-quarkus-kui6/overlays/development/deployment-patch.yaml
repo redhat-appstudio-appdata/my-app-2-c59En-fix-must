@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-kui6
+  namespace: adrina-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5452bc472f5625f6e5ea99a370487425cbbfc0654b04fa20337b09298a43c844
+        name: my-java-quarkus
+        resources: {}
+status: {}
